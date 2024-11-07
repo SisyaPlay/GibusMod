@@ -1,0 +1,24 @@
+{
+  "parent": "minecraft:item/generated",
+  "loader": "forge:separate_transforms",
+  "base": {
+    "parent": "gibusmod:item/gibus_2d"
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "gibusmod:item/gibus_2d"
+    },
+    "ground": {
+      "parent": "gibusmod:item/gibus_2d"
+    },
+    "fixed": {
+      "parent": "gibusmod:item/gibus_2d"
+    },
+    "head": {
+      "parent": "gibusmod:item/gibus_3d",
+      "textures": {
+        "layer0": "gibusmod:item/gibus_3d"
+      }
+    }
+  }
+}
