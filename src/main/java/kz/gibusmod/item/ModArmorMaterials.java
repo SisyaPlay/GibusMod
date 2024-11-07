@@ -14,7 +14,7 @@ import java.util.function.Supplier;
 
 public enum ModArmorMaterials implements ArmorMaterial {
     GIBUS("gibus", Integer.MIN_VALUE, new int[] {Integer.MAX_VALUE}, 25, SoundEvents.ANVIL_USE,
-            1f, 10f, () -> Ingredient.of(Items.NETHERITE_INGOT));
+            1.f, 10f, () -> Ingredient.of(Items.NETHERITE_INGOT));
 
     public final String name;
     private final int durabilityMultiplier;
