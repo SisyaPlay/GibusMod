@@ -1,6 +1,7 @@
 package kz.gibusmod;
 
 import com.mojang.logging.LogUtils;
+import kz.gibusmod.item.ModCreativeModTabs;
 import kz.gibusmod.item.ModItems;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.food.FoodProperties;
@@ -41,8 +42,9 @@ public class Gibusmod {
     public Gibusmod() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
-        ModItems.register(modEventBus);
+        ModCreativeModTabs.register(modEventBus);
 
+        ModItems.register(modEventBus);
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 
@@ -62,7 +64,12 @@ public class Gibusmod {
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
-        if (event.getTabKey() == CreativeModeTabs.COMBAT) event.accept(ModItems.GIBUS);
+        if (event.getTabKey() == CreativeModeTabs.COMBAT){
+            event.accept(ModItems.GIBUS);
+            event.accept(ModItems.GIBUS_VISOR);
+            event.accept(ModItems.GIBUS_CYLINDER);
+            event.accept(ModItems.SPERMA);
+        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call

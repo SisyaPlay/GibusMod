@@ -1,3 +1,7 @@
 {
-  "item.gibusmod.gibus": "Гибус"
+  "item.gibusmod.gibus": "Гибус",
+  "item.gibusmod.gibus_visor": "Козырек гибуса",
+  "item.gibusmod.gibus_cylinder": "Цилиндр гибуса",
+  "item.gibusmod.sperma": "Спэрма",
+  "creativetab.gibus_tab": "Гибусная вкладка"
 }
