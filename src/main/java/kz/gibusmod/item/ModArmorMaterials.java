@@ -1,6 +1,7 @@
 package kz.gibusmod.item;
 
 import kz.gibusmod.Gibusmod;
+import kz.gibusmod.sound.ModSound;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.entity.vehicle.Minecart;
@@ -13,7 +14,7 @@ import net.minecraft.world.item.crafting.Ingredient;
 import java.util.function.Supplier;
 
 public enum ModArmorMaterials implements ArmorMaterial {
-    GIBUS("gibus", Integer.MIN_VALUE, new int[] {Integer.MAX_VALUE}, 25, SoundEvents.ANVIL_USE,
+    GIBUS("gibus", Integer.MIN_VALUE, new int[] {Integer.MAX_VALUE}, 25, ModSound.GIBUS_EQUIP.get(),
             10f, 10f, () -> Ingredient.of(Items.NETHERITE_INGOT));
 
     public final String name;

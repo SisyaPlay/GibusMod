@@ -1,0 +1,8 @@
+{
+  "gibus_equip": {
+    "subtitels": "sounds.gibusmod.gibus_equip",
+    "sounds": [
+      "gibusmod:gibus_equip"
+    ]
+  }
+}

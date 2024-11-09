@@ -3,6 +3,7 @@ package kz.gibusmod;
 import com.mojang.logging.LogUtils;
 import kz.gibusmod.item.ModCreativeModTabs;
 import kz.gibusmod.item.ModItems;
+import kz.gibusmod.sound.ModSound;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.BlockItem;
@@ -45,6 +46,9 @@ public class Gibusmod {
         ModCreativeModTabs.register(modEventBus);
 
         ModItems.register(modEventBus);
+
+        ModSound.register(modEventBus);
+
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 

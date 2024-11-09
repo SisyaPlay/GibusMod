@@ -3,5 +3,6 @@
   "item.gibusmod.gibus_visor": "Gibus visor",
   "item.gibusmod.gibus_cylinder": "Gibus cylinder",
   "item.gibusmod.sperma": "Ghost",
-  "creativetab.gibus_tab": "GibusMod tab"
+  "creativetab.gibus_tab": "GibusMod tab",
+  "sounds.gibusmod.gibus_equip": "Gibus is equipped"
 }
